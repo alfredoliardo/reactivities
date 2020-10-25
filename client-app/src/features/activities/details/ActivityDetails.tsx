@@ -5,7 +5,7 @@ import { IActivity } from "../../../app/models/activity";
 interface IProps {
   activity: IActivity;
   setEditMode: (editMode:boolean)=>void;
-  setSelectedActivity: (activity: IActivity)=>void;
+  setSelectedActivity: (activity: IActivity | null)=>void;
 }
 
 export const ActivityDetails: React.FC<IProps> = ({ activity,setEditMode,setSelectedActivity }) => {
